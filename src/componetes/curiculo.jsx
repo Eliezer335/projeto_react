@@ -12,7 +12,7 @@ const dadosDoCurriculo = {
         primeiraFormacao: "Gestao de Tecnologia da Informação",
     },
     experienciaProficional:{
-        resumo: " Jovem dedicado em busca de oportunidades na área de TI. Possuo sólida formação teórica, habilidades em programação, resolução deproblemas e atendimento ao cliente, além do desejo de crescer profissionalmente ",
+        resumo: " Jovem dedicado em busca de oportunidades na área de TI. Possuo sólida formação teórica, habilidades em programação, resolução deproblemas e atendimento ao cliente, além do desejo de crescer profissionalmente. ",
         empresas: {
             primeiraEmpresa:{
                 nomeDaempresa:"Capital",
@@ -36,31 +36,35 @@ const dadosDoCurriculo = {
 const Curriculo = () => {
     return(
         <>
-        <div className='curriculo'>
-            <header>
-                <h2>{dadosDoCurriculo.nome}</h2>
-                <h3>{dadosDoCurriculo.email}</h3>
-                <h3>{dadosDoCurriculo.celular}</h3>
-            </header>
-            <main>
-                <h3>Resumo:{dadosDoCurriculo.experienciaProficional.resumo}</h3>
-                <h3>EXPERIÊNCIA</h3>
-                <h3>{dadosDoCurriculo.experienciaProficional.empresas.primeiraEmpresa.cargo}</h3>
-                <h3>{dadosDoCurriculo.experienciaProficional.empresas.primeiraEmpresa.atribuicoes}</h3>
-                <h3>Empresa {dadosDoCurriculo.experienciaProficional.empresas.primeiraEmpresa.nomeDaempresa}</h3>
-                <h3>{dadosDoCurriculo.experienciaProficional.empresas.primeiraEmpresa.periodoDeAtuacao}</h3>
-                <h3>Habilidades</h3>
-                <h3>{dadosDoCurriculo.experienciaProficional.habilidades.softSkills}</h3>
-                <h3>{dadosDoCurriculo.experienciaProficional.habilidades.hardSkills}</h3>
-                <h3>{dadosDoCurriculo.experienciaProficional.idioma.primeiroIdioma}</h3>
-            </main>
-            <footer>
-                <h3>links para contato</h3>
-                <h3>{dadosDoCurriculo.linksProficionais.linkedin}</h3>
-                <h3>{dadosDoCurriculo.linksProficionais.instagram}</h3>
-            </footer>
+        <div className='container_curriculo'>
+
+            <div className='curriculo'>
+                <header className='header'>
+                    <h2 className='headerTxt1'>{dadosDoCurriculo.nome}</h2>
+                    <h3 className='headerTxt2'>{dadosDoCurriculo.email}</h3>
+                    <h3 className='headerTxt3'>{dadosDoCurriculo.celular}</h3>
+                </header>
+                <main>
+                    <h3>RESUMO</h3>
+                    <h3 className='resumoTxt'>{dadosDoCurriculo.experienciaProficional.resumo}</h3>
+                    <h3>EXPERIÊNCIA</h3>
+                    <h3 className='experieciaTxt'>Cargo na Empresa: {dadosDoCurriculo.experienciaProficional.empresas.primeiraEmpresa.cargo}</h3>
+                    <h3 className='experieciaTxt'>{dadosDoCurriculo.experienciaProficional.empresas.primeiraEmpresa.atribuicoes}</h3>
+                    <h3 className='experieciaTxt'>Empresa {dadosDoCurriculo.experienciaProficional.empresas.primeiraEmpresa.nomeDaempresa}, {dadosDoCurriculo.experienciaProficional.empresas.primeiraEmpresa.periodoDeAtuacao}</h3>
+                    <h3>HABILIDADES</h3>
+                    <h3 className='habilidadesTxt'>{dadosDoCurriculo.experienciaProficional.habilidades.softSkills}</h3>
+                    <h3 className='habilidadesTxt'>{dadosDoCurriculo.experienciaProficional.habilidades.hardSkills}</h3>
+                    <h3>IDIOMAS</h3>
+                    <h3 className='idiomaTxt'>{dadosDoCurriculo.experienciaProficional.idioma.primeiroIdioma}</h3>
+                </main>
+                <footer>
+                    <h3>links para contato</h3>
+                    <h3 className='linksTxt'>{dadosDoCurriculo.linksProficionais.linkedin}</h3>
+                    <h3 className='linksTxt'>{dadosDoCurriculo.linksProficionais.instagram}</h3>
+                </footer>
+            </div>
+
         </div>
-            
         </>
     )
 } 
