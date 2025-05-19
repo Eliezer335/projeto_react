@@ -1,7 +1,7 @@
 function Header(){
     return(
         <header>
-            <h1>Esse é o meu Header!</h1>
+            <h1>Curriculos selecionados!</h1>
         </header>
     )
 }

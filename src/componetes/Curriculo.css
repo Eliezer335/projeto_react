@@ -1,5 +1,4 @@
-
-.container_curriculo{
+.container_curriculo {
     width: 60%;
     background-color: rgba(179, 178, 178, 0.885);
     height: auto;
@@ -11,7 +10,8 @@
     box-sizing: border-box;
     box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.5);
 }
-.curriculo{
+
+.curriculo {
     width: 100%;
     height: 100%;
     display: flex;
@@ -20,41 +20,43 @@
     justify-content: center;
 }
 
-.headerTxt1{
+.headerTxt1 {
     margin-bottom: 0;
 }
-.headerTxt2{
+
+.headerTxt2 {
     margin: 0;
     font-size: 15px;
 }
-.headerTxt3{
+
+.headerTxt3 {
     margin-top: 0;
     font-size: 15px;
 }
 
-.resumoTxt{
+.resumoTxt {
     text-align: left;
     font-size: 15px;
 }
 
-.experieciaTxt{
+.experieciaTxt {
     margin: 5px;
     font-size: 15px;
     text-align: left;
 }
 
-.habilidadesTxt{
+.habilidadesTxt {
     margin: 5px;
     font-size: 15px;
     text-align: left;
 }
 
-.idiomaTxt{
+.idiomaTxt {
     font-size: 15px;
     text-align: left;
 }
 
-.linksTxt{
+.linksTxt {
     font-size: 15px;
     text-align: center;
 }
