@@ -1,7 +1,9 @@
 import './Curriculo.css'
 
 const dadosDoCurriculo = {
-    
+    nome: "Eliezer Martinhago da Silva",
+    celular: "(11) 9 9999-9999",
+    email: "eliezer@gmail.com",
     linksProficionais: {
         linkedin: "www.linkedin.com/in/eliezer-martinhago-da-silva-9708451a7",
         instagram: "@elizermartinhago"
@@ -34,12 +36,13 @@ const dadosDoCurriculo = {
 const Curriculo = ({
     nome,
     celular,
-    email
+    email,
+    resumo,
+    cargo
 }) => {
     return (
         <>
             <div className='container_curriculo' >
-
                 <div className='curriculo'>
                     <header className='header'>
                         <h2 className='headerTxt1'>{nome}</h2>
@@ -48,9 +51,9 @@ const Curriculo = ({
                     </header>
                     <main>
                         <h3>RESUMO</h3>
-                        <h3 className='resumoTxt'>{dadosDoCurriculo.experienciaProficional.resumo}</h3>
+                        <h3 className='resumoTxt'>{resumo}</h3>
                         <h3>EXPERIÊNCIA</h3>
-                        <h3 className='experieciaTxt'>Cargo na Empresa: {dadosDoCurriculo.experienciaProficional.empresas.primeiraEmpresa.cargo}</h3>
+                        <h3 className='experieciaTxt'>Cargo na Empresa: {cargo}</h3>
                         <h3 className='experieciaTxt'>{dadosDoCurriculo.experienciaProficional.empresas.primeiraEmpresa.atribuicoes}</h3>
                         <h3 className='experieciaTxt'>Empresa {dadosDoCurriculo.experienciaProficional.empresas.primeiraEmpresa.nomeDaempresa}, {dadosDoCurriculo.experienciaProficional.empresas.primeiraEmpresa.periodoDeAtuacao}</h3>
                         <h3>HABILIDADES</h3>
