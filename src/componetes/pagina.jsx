@@ -1,31 +1,295 @@
-import { useState } from "react";
+import Curriculo from "./curiculo";
+const listaDeCurriculos = [
+    {
+        nome: "Eliezer Martinhago da Silva",
+        celular: "(11) 9 9999-9999",
+        email: "eliezer@gmail.com",
+        linksProficionais: {
+            linkedin: "www.linkedin.com/in/mariana-castro-ti",
+            instagram: "@marianacastro.dev"
+        },
+        FormacaoAcademica: {
+            primeiraFormacao: "Análise e Desenvolvimento de Sistemas"
+        },
+        experienciaProficional: {
+            resumo: "Apaixonada por tecnologia e soluções digitais. Procuro oportunidades para aplicar meus conhecimentos e crescer profissionalmente.",
+            empresas: {
+                primeiraEmpresa: {
+                    nomeDaempresa: "TechUp",
+                    cargo: "Estagiária de Desenvolvimento",
+                    atribuicoes: "Apoio no desenvolvimento de sistemas web com HTML, CSS e JavaScript.",
+                    periodoDeAtuacao: "Março 2023 - Dezembro 2023"
+                }
+            },
+            habilidades: {
+                softSkills: "Comunicação, Proatividade, Trabalho em equipe",
+                hardSkills: "HTML, CSS, JavaScript, Git"
+            },
+            idioma: {
+                primeiroIdioma: "Inglês - Intermediário"
+            }
+        }
+    },
+    {
+        linksProficionais: {
+            linkedin: "www.linkedin.com/in/jonathan-pereira-dev",
+            instagram: "@jonathan_codes"
+        },
+        FormacaoAcademica: {
+            primeiraFormacao: "Engenharia da Computação"
+        },
+        experienciaProficional: {
+            resumo: "Estudante dedicado com interesse em desenvolvimento de software e análise de dados.",
+            empresas: {
+                primeiraEmpresa: {
+                    nomeDaempresa: "Byte Systems",
+                    cargo: "Suporte Técnico",
+                    atribuicoes: "Atendimento ao cliente, manutenção de computadores, instalação de softwares.",
+                    periodoDeAtuacao: "Janeiro 2022 - Outubro 2023"
+                }
+            },
+            habilidades: {
+                softSkills: "Foco, Adaptabilidade, Organização",
+                hardSkills: "Python, SQL, Power BI, Linux"
+            },
+            idioma: {
+                primeiroIdioma: "Inglês - Básico"
+            }
+        }
+    },
+    {
+        linksProficionais: {
+            linkedin: "www.linkedin.com/in/lais-monteiro-ti",
+            instagram: "@lais.tech"
+        },
+        FormacaoAcademica: {
+            primeiraFormacao: "Ciência da Computação"
+        },
+        experienciaProficional: {
+            resumo: "Tenho paixão por inovação e busco aplicar minhas habilidades para resolver problemas reais com tecnologia.",
+            empresas: {
+                primeiraEmpresa: {
+                    nomeDaempresa: "Start Tecnologia",
+                    cargo: "Desenvolvedora Júnior",
+                    atribuicoes: "Desenvolvimento de APIs com Node.js e manutenção de banco de dados PostgreSQL.",
+                    periodoDeAtuacao: "Abril 2022 - Atualmente"
+                }
+            },
+            habilidades: {
+                softSkills: "Criatividade, Empatia, Resolução de problemas",
+                hardSkills: "Node.js, PostgreSQL, React, REST APIs"
+            },
+            idioma: {
+                primeiroIdioma: "Inglês - Intermediário"
+            }
+        }
+    },
+    {
+        linksProficionais: {
+            linkedin: "www.linkedin.com/in/felipe-gomes-ti",
+            instagram: "@felipe.codes"
+        },
+        FormacaoAcademica: {
+            primeiraFormacao: "Sistemas de Informação"
+        },
+        experienciaProficional: {
+            resumo: "Busco novos desafios na área de desenvolvimento de sistemas. Tenho facilidade com lógica e trabalho em equipe.",
+            empresas: {
+                primeiraEmpresa: {
+                    nomeDaempresa: "Inova TI",
+                    cargo: "Assistente de Suporte",
+                    atribuicoes: "Suporte remoto a clientes, documentação de processos e testes de sistemas.",
+                    periodoDeAtuacao: "Fevereiro 2021 - Dezembro 2022"
+                }
+            },
+            habilidades: {
+                softSkills: "Colaboração, Responsabilidade, Pontualidade",
+                hardSkills: "Java, MySQL, GitHub, HTML"
+            },
+            idioma: {
+                primeiroIdioma: "Inglês - Básico"
+            }
+        }
+    },
+    {
+        linksProficionais: {
+            linkedin: "www.linkedin.com/in/ana-carolina-ti",
+            instagram: "@ana.devfront"
+        },
+        FormacaoAcademica: {
+            primeiraFormacao: "Engenharia de Software"
+        },
+        experienciaProficional: {
+            resumo: "Desenvolvedora Front-End com foco em interfaces acessíveis e responsivas.",
+            empresas: {
+                primeiraEmpresa: {
+                    nomeDaempresa: "DesignCode",
+                    cargo: "Desenvolvedora Front-End",
+                    atribuicoes: "Criação de interfaces com React, integração com APIs e design responsivo.",
+                    periodoDeAtuacao: "Janeiro 2023 - Atualmente"
+                }
+            },
+            habilidades: {
+                softSkills: "Detalhista, Organização, Comunicação",
+                hardSkills: "React, Tailwind CSS, Figma, JavaScript"
+            },
+            idioma: {
+                primeiroIdioma: "Inglês - Avançado"
+            }
+        }
+    },
+    {
+        linksProficionais: {
+            linkedin: "www.linkedin.com/in/ricardo-alves-ti",
+            instagram: "@ricardo.techlife"
+        },
+        FormacaoAcademica: {
+            primeiraFormacao: "Tecnologia da Informação"
+        },
+        experienciaProficional: {
+            resumo: "Tecnólogo com experiência em infraestrutura de redes e segurança da informação.",
+            empresas: {
+                primeiraEmpresa: {
+                    nomeDaempresa: "NetSol",
+                    cargo: "Analista de Redes",
+                    atribuicoes: "Monitoramento de rede, configuração de switches e firewalls.",
+                    periodoDeAtuacao: "Maio 2020 - Agosto 2023"
+                }
+            },
+            habilidades: {
+                softSkills: "Confiável, Analítico, Atento aos detalhes",
+                hardSkills: "Cisco, Linux, Firewall, VLAN"
+            },
+            idioma: {
+                primeiroIdioma: "Inglês - Intermediário"
+            }
+        }
+    },
+    {
+        linksProficionais: {
+            linkedin: "www.linkedin.com/in/juliana-souza-ti",
+            instagram: "@juliana.devjr"
+        },
+        FormacaoAcademica: {
+            primeiraFormacao: "Informática para Negócios"
+        },
+        experienciaProficional: {
+            resumo: "Estagiária dedicada e comunicativa, com foco em desenvolvimento de sites e blogs empresariais.",
+            empresas: {
+                primeiraEmpresa: {
+                    nomeDaempresa: "WebStart",
+                    cargo: "Estagiária de Web Design",
+                    atribuicoes: "Criação de layouts, ajustes em HTML/CSS, e suporte em WordPress.",
+                    periodoDeAtuacao: "Agosto 2022 - Janeiro 2023"
+                }
+            },
+            habilidades: {
+                softSkills: "Criatividade, Flexibilidade, Organização",
+                hardSkills: "HTML, CSS, WordPress, Photoshop"
+            },
+            idioma: {
+                primeiroIdioma: "Inglês - Básico"
+            }
+        }
+    },
+    {
+        linksProficionais: {
+            linkedin: "www.linkedin.com/in/matheus-lima-ti",
+            instagram: "@matheus.devfull"
+        },
+        FormacaoAcademica: {
+            primeiraFormacao: "Ciência de Dados"
+        },
+        experienciaProficional: {
+            resumo: "Entusiasta em ciência de dados e machine learning. Em busca de oportunidades para aplicar modelos preditivos em negócios reais.",
+            empresas: {
+                primeiraEmpresa: {
+                    nomeDaempresa: "DataSmart",
+                    cargo: "Estagiário de Ciência de Dados",
+                    atribuicoes: "Análise de dados, criação de dashboards e suporte na criação de modelos preditivos.",
+                    periodoDeAtuacao: "Março 2023 - Atualmente"
+                }
+            },
+            habilidades: {
+                softSkills: "Raciocínio lógico, Foco em resultados, Colaboração",
+                hardSkills: "Python, Pandas, Scikit-learn, Power BI"
+            },
+            idioma: {
+                primeiroIdioma: "Inglês - Intermediário"
+            }
+        }
+    },
+    {
+        linksProficionais: {
+            linkedin: "www.linkedin.com/in/beatriz-freitas-ti",
+            instagram: "@bia.code"
+        },
+        FormacaoAcademica: {
+            primeiraFormacao: "Tecnologia em Banco de Dados"
+        },
+        experienciaProficional: {
+            resumo: "Profissional organizada e atenta aos detalhes, com experiência em gerenciamento de dados e consultas SQL.",
+            empresas: {
+                primeiraEmpresa: {
+                    nomeDaempresa: "DataBank",
+                    cargo: "Analista de Dados",
+                    atribuicoes: "Criação de relatórios, otimização de queries e suporte ao time de BI.",
+                    periodoDeAtuacao: "Julho 2021 - Janeiro 2024"
+                }
+            },
+            habilidades: {
+                softSkills: "Comprometimento, Análise crítica, Comunicação clara",
+                hardSkills: "SQL, Oracle, PostgreSQL, Excel"
+            },
+            idioma: {
+                primeiroIdioma: "Inglês - Avançado"
+            }
+        }
+    },
+    {
+        linksProficionais: {
+            linkedin: "www.linkedin.com/in/caio-martins-ti",
+            instagram: "@caio.fullstack"
+        },
+        FormacaoAcademica: {
+            primeiraFormacao: "Desenvolvimento Web"
+        },
+        experienciaProficional: {
+            resumo: "Desenvolvedor Full Stack com foco em soluções escaláveis para web e mobile.",
+            empresas: {
+                primeiraEmpresa: {
+                    nomeDaempresa: "CodeWave",
+                    cargo: "Desenvolvedor Full Stack",
+                    atribuicoes: "Criação de sistemas integrados usando React, Node.js e MongoDB.",
+                    periodoDeAtuacao: "Setembro 2022 - Atualmente"
+                }
+            },
+            habilidades: {
+                softSkills: "Iniciativa, Pensamento sistêmico, Liderança",
+                hardSkills: "React, Node.js, MongoDB, Docker"
+            },
+            idioma: {
+                primeiroIdioma: "Inglês - Intermediário"
+            }
+        }
+    }
+];
 
 function Pagina() {
-    const nome = "Gleison";
-
-    const [contador, setContador] = useState(0);
-    // const [estado, modificador do estado ] = useState(valor inicial do estado)
-
-    //Hooks do React -> São funções que o próprio React disponibiliza para determinados objeitos
-    //dentro da vida útil de um componente.
-
-
-    //estado (state) é qualquer valor que você queira que varie ao longo do tempo
-
-
-    function aumentaContador() {
-        setContador(contador + 1)
-    };
-
     return (
         <>
-            <main>
-                <h1>Essa é minha primeira página</h1>
-                <p>foi o {nome} que criou esta página</p>
-                <h2>O valor é: {contador}</h2>
-                <button onClick={aumentaContador}>Aumente o valor</button>
-                <img width={100} src="data:image/jpeg;base64,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" alt="" />
-            </main>
+            {listaDeCurriculos.map((item) => {
+                return (
+                    <Curriculo
+                        nome={item.nome}
+                        celular={item.celular}
+                        email={item.email}
+                        resumo={item.experienciaProficional.resumo}
+                        cargo={item.experienciaProficional.empresas.primeiraEmpresa.cargo}
+                    />
+                )
+            })}
+
         </>
     )
 };

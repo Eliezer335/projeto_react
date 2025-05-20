@@ -5,6 +5,11 @@
   text-align: center;
 }
 
+.caixa {
+  width: 1000px;
+  height: 1000px;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
