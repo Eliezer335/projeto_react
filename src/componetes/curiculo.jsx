@@ -38,7 +38,15 @@ const Curriculo = ({
     celular,
     email,
     resumo,
-    cargo
+    cargo,
+    atribuicoes,
+    nomeDaempresa,
+    periodoDeAtuacao,
+    softSkills,
+    hardSkills,
+    idioma,
+    linkedin,
+    instagram
 }) => {
     return (
         <>
@@ -54,18 +62,18 @@ const Curriculo = ({
                         <h3 className='resumoTxt'>{resumo}</h3>
                         <h3>EXPERIÊNCIA</h3>
                         <h3 className='experieciaTxt'>Cargo na Empresa: {cargo}</h3>
-                        <h3 className='experieciaTxt'>{dadosDoCurriculo.experienciaProficional.empresas.primeiraEmpresa.atribuicoes}</h3>
-                        <h3 className='experieciaTxt'>Empresa {dadosDoCurriculo.experienciaProficional.empresas.primeiraEmpresa.nomeDaempresa}, {dadosDoCurriculo.experienciaProficional.empresas.primeiraEmpresa.periodoDeAtuacao}</h3>
+                        <h3 className='experieciaTxt'>{atribuicoes}</h3>
+                        <h3 className='experieciaTxt'>Empresa {nomeDaempresa}, {periodoDeAtuacao}</h3>
                         <h3>HABILIDADES</h3>
-                        <h3 className='habilidadesTxt'>{dadosDoCurriculo.experienciaProficional.habilidades.softSkills}</h3>
-                        <h3 className='habilidadesTxt'>{dadosDoCurriculo.experienciaProficional.habilidades.hardSkills}</h3>
+                        <h3 className='habilidadesTxt'>{softSkills}</h3>
+                        <h3 className='habilidadesTxt'>{hardSkills}</h3>
                         <h3>IDIOMAS</h3>
-                        <h3 className='idiomaTxt'>{dadosDoCurriculo.experienciaProficional.idioma.primeiroIdioma}</h3>
+                        <h3 className='idiomaTxt'>{idioma}</h3>
                     </main>
                     <footer>
                         <h3>links para contato</h3>
-                        <h3 className='linksTxt'>{dadosDoCurriculo.linksProficionais.linkedin}</h3>
-                        <h3 className='linksTxt'>{dadosDoCurriculo.linksProficionais.instagram}</h3>
+                        <h3 className='linksTxt'>{linkedin}</h3>
+                        <h3 className='linksTxt'>{instagram}</h3>
                     </footer>
                 </div>
 
