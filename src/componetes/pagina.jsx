@@ -315,6 +315,14 @@ function Pagina() {
                         email={item.email}
                         resumo={item.experienciaProficional.resumo}
                         cargo={item.experienciaProficional.empresas.primeiraEmpresa.cargo}
+                        atribuicoes={item.experienciaProficional.empresas.primeiraEmpresa.atribuicoes}
+                        nomeDaempresa={item.experienciaProficional.empresas.primeiraEmpresa.nomeDaempresa}
+                        periodoDeAtuacao={item.experienciaProficional.empresas.primeiraEmpresa.periodoDeAtuacao}
+                        softSkills={item.experienciaProficional.habilidades.softSkills}
+                        hardSkills={item.experienciaProficional.habilidades.hardSkills}
+                        idioma={item.experienciaProficional.idioma.primeiroIdioma}
+                        linkedin={item.linksProficionais.linkedin}
+                        instagram={item.linksProficionais.instagram}
                     />
                 )
             })}
