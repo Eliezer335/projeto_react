@@ -8,7 +8,8 @@ import PegaDados from './componetes/PegaDados'
 function App() {
   return (
     <>
-      <PegaDados />
+      {/* <PegaDados /> */}
+      <Pagina/>
     </>
   )
 }
