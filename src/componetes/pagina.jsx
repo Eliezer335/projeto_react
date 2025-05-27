@@ -1,279 +1,308 @@
 import Curriculo from "./curiculo";
+
 const listaDeCurriculos = [
     {
-        nome: "Eliezer Martinhago da Silva",
-        celular: "(11) 9 9999-9999",
-        email: "eliezer@gmail.com",
-        linksProficionais: {
-            linkedin: "www.linkedin.com/in/mariana-castro-ti",
-            instagram: "@marianacastro.dev"
+        "nome": "Eliezer Martinhago da Silva",
+        "celular": "(11) 9 9999-9999",
+        "email": "eliezer@gmail.com",
+        "linksProficionais": {
+            "linkedin": "www.linkedin.com/in/mariana-castro-ti",
+            "instagram": "@marianacastro.dev"
         },
-        FormacaoAcademica: {
-            primeiraFormacao: "Análise e Desenvolvimento de Sistemas"
+        "FormacaoAcademica": {
+            "primeiraFormacao": "Análise e Desenvolvimento de Sistemas"
         },
-        experienciaProficional: {
-            resumo: "Apaixonada por tecnologia e soluções digitais. Procuro oportunidades para aplicar meus conhecimentos e crescer profissionalmente.",
-            empresas: {
-                primeiraEmpresa: {
-                    nomeDaempresa: "TechUp",
-                    cargo: "Estagiária de Desenvolvimento",
-                    atribuicoes: "Apoio no desenvolvimento de sistemas web com HTML, CSS e JavaScript.",
-                    periodoDeAtuacao: "Março 2023 - Dezembro 2023"
+        "experienciaProficional": {
+            "resumo": "Apaixonada por tecnologia e soluções digitais. Procuro oportunidades para aplicar meus conhecimentos e crescer profissionalmente.",
+            "empresas": {
+                "primeiraEmpresa": {
+                    "nomeDaempresa": "TechUp",
+                    "cargo": "Estagiária de Desenvolvimento",
+                    "atribuicoes": "Apoio no desenvolvimento de sistemas web com HTML, CSS e JavaScript.",
+                    "periodoDeAtuacao": "Março 2023 - Dezembro 2023"
                 }
             },
-            habilidades: {
-                softSkills: "Comunicação, Proatividade, Trabalho em equipe",
-                hardSkills: "HTML, CSS, JavaScript, Git"
+            "habilidades": {
+                "softSkills": "Comunicação, Proatividade, Trabalho em equipe",
+                "hardSkills": "HTML, CSS, JavaScript, Git"
             },
-            idioma: {
-                primeiroIdioma: "Inglês - Intermediário"
+            "idioma": {
+                "primeiroIdioma": "Inglês - Intermediário"
             }
         }
     },
     {
-        linksProficionais: {
-            linkedin: "www.linkedin.com/in/jonathan-pereira-dev",
-            instagram: "@jonathan_codes"
+        "nome": "Ana Beatriz Oliveira",
+        "celular": "(21) 9 8888-1234",
+        "email": "ana.oliveira@gmail.com",
+        "linksProficionais": {
+            "linkedin": "www.linkedin.com/in/anabeatrizdev",
+            "instagram": "@ana.dev"
         },
-        FormacaoAcademica: {
-            primeiraFormacao: "Engenharia da Computação"
+        "FormacaoAcademica": {
+            "primeiraFormacao": "Engenharia da Computação"
         },
-        experienciaProficional: {
-            resumo: "Estudante dedicado com interesse em desenvolvimento de software e análise de dados.",
-            empresas: {
-                primeiraEmpresa: {
-                    nomeDaempresa: "Byte Systems",
-                    cargo: "Suporte Técnico",
-                    atribuicoes: "Atendimento ao cliente, manutenção de computadores, instalação de softwares.",
-                    periodoDeAtuacao: "Janeiro 2022 - Outubro 2023"
+        "experienciaProficional": {
+            "resumo": "Entusiasta em desenvolvimento de software com foco em soluções escaláveis e eficientes.",
+            "empresas": {
+                "primeiraEmpresa": {
+                    "nomeDaempresa": "CodeLab",
+                    "cargo": "Desenvolvedora Júnior",
+                    "atribuicoes": "Desenvolvimento de APIs REST usando Node.js.",
+                    "periodoDeAtuacao": "Janeiro 2024 - Atual"
                 }
             },
-            habilidades: {
-                softSkills: "Foco, Adaptabilidade, Organização",
-                hardSkills: "Python, SQL, Power BI, Linux"
+            "habilidades": {
+                "softSkills": "Resolução de problemas, Colaboração, Organização",
+                "hardSkills": "Node.js, JavaScript, MongoDB, Git"
             },
-            idioma: {
-                primeiroIdioma: "Inglês - Básico"
+            "idioma": {
+                "primeiroIdioma": "Inglês - Avançado"
             }
         }
     },
     {
-        linksProficionais: {
-            linkedin: "www.linkedin.com/in/lais-monteiro-ti",
-            instagram: "@lais.tech"
+        "nome": "Lucas Mendes Rocha",
+        "celular": "(31) 9 7777-4567",
+        "email": "lucas.rocha@outlook.com",
+        "linksProficionais": {
+            "linkedin": "www.linkedin.com/in/lucasmendesdev",
+            "instagram": "@lucasmrocha.dev"
         },
-        FormacaoAcademica: {
-            primeiraFormacao: "Ciência da Computação"
+        "FormacaoAcademica": {
+            "primeiraFormacao": "Ciência da Computação"
         },
-        experienciaProficional: {
-            resumo: "Tenho paixão por inovação e busco aplicar minhas habilidades para resolver problemas reais com tecnologia.",
-            empresas: {
-                primeiraEmpresa: {
-                    nomeDaempresa: "Start Tecnologia",
-                    cargo: "Desenvolvedora Júnior",
-                    atribuicoes: "Desenvolvimento de APIs com Node.js e manutenção de banco de dados PostgreSQL.",
-                    periodoDeAtuacao: "Abril 2022 - Atualmente"
+        "experienciaProficional": {
+            "resumo": "Buscando aprimorar minhas habilidades como desenvolvedor full stack.",
+            "empresas": {
+                "primeiraEmpresa": {
+                    "nomeDaempresa": "DevHouse",
+                    "cargo": "Estagiário de Front-End",
+                    "atribuicoes": "Criação de interfaces responsivas com React.",
+                    "periodoDeAtuacao": "Agosto 2023 - Abril 2024"
                 }
             },
-            habilidades: {
-                softSkills: "Criatividade, Empatia, Resolução de problemas",
-                hardSkills: "Node.js, PostgreSQL, React, REST APIs"
+            "habilidades": {
+                "softSkills": "Adaptabilidade, Comunicação, Atenção aos detalhes",
+                "hardSkills": "React, HTML, CSS, GitHub"
             },
-            idioma: {
-                primeiroIdioma: "Inglês - Intermediário"
+            "idioma": {
+                "primeiroIdioma": "Inglês - Intermediário"
             }
         }
     },
     {
-        linksProficionais: {
-            linkedin: "www.linkedin.com/in/felipe-gomes-ti",
-            instagram: "@felipe.codes"
+        "nome": "Juliana Costa Ribeiro",
+        "celular": "(51) 9 9999-9988",
+        "email": "juliana.ribeiro@gmail.com",
+        "linksProficionais": {
+            "linkedin": "www.linkedin.com/in/julianacostadev",
+            "instagram": "@julianacode"
         },
-        FormacaoAcademica: {
-            primeiraFormacao: "Sistemas de Informação"
+        "FormacaoAcademica": {
+            "primeiraFormacao": "Sistemas de Informação"
         },
-        experienciaProficional: {
-            resumo: "Busco novos desafios na área de desenvolvimento de sistemas. Tenho facilidade com lógica e trabalho em equipe.",
-            empresas: {
-                primeiraEmpresa: {
-                    nomeDaempresa: "Inova TI",
-                    cargo: "Assistente de Suporte",
-                    atribuicoes: "Suporte remoto a clientes, documentação de processos e testes de sistemas.",
-                    periodoDeAtuacao: "Fevereiro 2021 - Dezembro 2022"
+        "experienciaProficional": {
+            "resumo": "Foco em desenvolvimento back-end e boas práticas de arquitetura de software.",
+            "empresas": {
+                "primeiraEmpresa": {
+                    "nomeDaempresa": "BitTech",
+                    "cargo": "Estagiária Back-End",
+                    "atribuicoes": "Desenvolvimento de serviços com Python e Flask.",
+                    "periodoDeAtuacao": "Fevereiro 2024 - Atual"
                 }
             },
-            habilidades: {
-                softSkills: "Colaboração, Responsabilidade, Pontualidade",
-                hardSkills: "Java, MySQL, GitHub, HTML"
+            "habilidades": {
+                "softSkills": "Proatividade, Foco, Capacidade analítica",
+                "hardSkills": "Python, Flask, PostgreSQL, Git"
             },
-            idioma: {
-                primeiroIdioma: "Inglês - Básico"
+            "idioma": {
+                "primeiroIdioma": "Inglês - Avançado"
             }
         }
     },
     {
-        linksProficionais: {
-            linkedin: "www.linkedin.com/in/ana-carolina-ti",
-            instagram: "@ana.devfront"
+        "nome": "Diego Fernandes Lima",
+        "celular": "(61) 9 5555-7788",
+        "email": "diego.lima@techmail.com",
+        "linksProficionais": {
+            "linkedin": "www.linkedin.com/in/diegofernandesdev",
+            "instagram": "@diegofdev"
         },
-        FormacaoAcademica: {
-            primeiraFormacao: "Engenharia de Software"
+        "FormacaoAcademica": {
+            "primeiraFormacao": "Tecnologia da Informação"
         },
-        experienciaProficional: {
-            resumo: "Desenvolvedora Front-End com foco em interfaces acessíveis e responsivas.",
-            empresas: {
-                primeiraEmpresa: {
-                    nomeDaempresa: "DesignCode",
-                    cargo: "Desenvolvedora Front-End",
-                    atribuicoes: "Criação de interfaces com React, integração com APIs e design responsivo.",
-                    periodoDeAtuacao: "Janeiro 2023 - Atualmente"
+        "experienciaProficional": {
+            "resumo": "Técnico em TI em transição para desenvolvimento de software, com foco em Python.",
+            "empresas": {
+                "primeiraEmpresa": {
+                    "nomeDaempresa": "ITNow",
+                    "cargo": "Assistente de Suporte Técnico",
+                    "atribuicoes": "Atendimento a chamados, manutenção de sistemas e scripts em Python.",
+                    "periodoDeAtuacao": "Janeiro 2022 - Dezembro 2023"
                 }
             },
-            habilidades: {
-                softSkills: "Detalhista, Organização, Comunicação",
-                hardSkills: "React, Tailwind CSS, Figma, JavaScript"
+            "habilidades": {
+                "softSkills": "Organização, Comunicação, Agilidade",
+                "hardSkills": "Python, Bash, Git, SQL"
             },
-            idioma: {
-                primeiroIdioma: "Inglês - Avançado"
+            "idioma": {
+                "primeiroIdioma": "Inglês - Básico"
             }
         }
     },
     {
-        linksProficionais: {
-            linkedin: "www.linkedin.com/in/ricardo-alves-ti",
-            instagram: "@ricardo.techlife"
+        "nome": "Carla Menezes Silva",
+        "celular": "(85) 9 4444-3322",
+        "email": "carla.ms@devmail.com",
+        "linksProficionais": {
+            "linkedin": "www.linkedin.com/in/carlamsdev",
+            "instagram": "@carla.codes"
         },
-        FormacaoAcademica: {
-            primeiraFormacao: "Tecnologia da Informação"
+        "FormacaoAcademica": {
+            "primeiraFormacao": "Engenharia de Software"
         },
-        experienciaProficional: {
-            resumo: "Tecnólogo com experiência em infraestrutura de redes e segurança da informação.",
-            empresas: {
-                primeiraEmpresa: {
-                    nomeDaempresa: "NetSol",
-                    cargo: "Analista de Redes",
-                    atribuicoes: "Monitoramento de rede, configuração de switches e firewalls.",
-                    periodoDeAtuacao: "Maio 2020 - Agosto 2023"
+        "experienciaProficional": {
+            "resumo": "Desenvolvedora com experiência em projetos ágeis e interfaces modernas.",
+            "empresas": {
+                "primeiraEmpresa": {
+                    "nomeDaempresa": "SoftPlus",
+                    "cargo": "Estagiária Front-End",
+                    "atribuicoes": "Criação de telas em Vue.js e manutenção de layout responsivo.",
+                    "periodoDeAtuacao": "Julho 2023 - Atual"
                 }
             },
-            habilidades: {
-                softSkills: "Confiável, Analítico, Atento aos detalhes",
-                hardSkills: "Cisco, Linux, Firewall, VLAN"
+            "habilidades": {
+                "softSkills": "Trabalho em equipe, Comunicação, Organização",
+                "hardSkills": "Vue.js, HTML, CSS, Git"
             },
-            idioma: {
-                primeiroIdioma: "Inglês - Intermediário"
+            "idioma": {
+                "primeiroIdioma": "Inglês - Intermediário"
             }
         }
     },
     {
-        linksProficionais: {
-            linkedin: "www.linkedin.com/in/juliana-souza-ti",
-            instagram: "@juliana.devjr"
+        "nome": "Felipe Andrade Santos",
+        "celular": "(41) 9 6666-1122",
+        "email": "felipe.as@devmail.com",
+        "linksProficionais": {
+            "linkedin": "www.linkedin.com/in/felipeandradedev",
+            "instagram": "@felipe.codes"
         },
-        FormacaoAcademica: {
-            primeiraFormacao: "Informática para Negócios"
+        "FormacaoAcademica": {
+            "primeiraFormacao": "Tecnologia em Banco de Dados"
         },
-        experienciaProficional: {
-            resumo: "Estagiária dedicada e comunicativa, com foco em desenvolvimento de sites e blogs empresariais.",
-            empresas: {
-                primeiraEmpresa: {
-                    nomeDaempresa: "WebStart",
-                    cargo: "Estagiária de Web Design",
-                    atribuicoes: "Criação de layouts, ajustes em HTML/CSS, e suporte em WordPress.",
-                    periodoDeAtuacao: "Agosto 2022 - Janeiro 2023"
+        "experienciaProficional": {
+            "resumo": "Apaixonado por dados e automação. Atuo como analista em sistemas de informação.",
+            "empresas": {
+                "primeiraEmpresa": {
+                    "nomeDaempresa": "DataSoft",
+                    "cargo": "Estagiário em Análise de Dados",
+                    "atribuicoes": "Coleta e análise de dados em SQL e Python.",
+                    "periodoDeAtuacao": "Março 2023 - Dezembro 2023"
                 }
             },
-            habilidades: {
-                softSkills: "Criatividade, Flexibilidade, Organização",
-                hardSkills: "HTML, CSS, WordPress, Photoshop"
+            "habilidades": {
+                "softSkills": "Raciocínio lógico, Detalhismo, Proatividade",
+                "hardSkills": "SQL, Python, Power BI, Excel Avançado"
             },
-            idioma: {
-                primeiroIdioma: "Inglês - Básico"
+            "idioma": {
+                "primeiroIdioma": "Inglês - Intermediário"
             }
         }
     },
     {
-        linksProficionais: {
-            linkedin: "www.linkedin.com/in/matheus-lima-ti",
-            instagram: "@matheus.devfull"
+        "nome": "Renata Lopes Farias",
+        "celular": "(71) 9 2222-9900",
+        "email": "renatafarias@gmail.com",
+        "linksProficionais": {
+            "linkedin": "www.linkedin.com/in/renatalf",
+            "instagram": "@renata.f.dev"
         },
-        FormacaoAcademica: {
-            primeiraFormacao: "Ciência de Dados"
+        "FormacaoAcademica": {
+            "primeiraFormacao": "Engenharia de Controle e Automação"
         },
-        experienciaProficional: {
-            resumo: "Entusiasta em ciência de dados e machine learning. Em busca de oportunidades para aplicar modelos preditivos em negócios reais.",
-            empresas: {
-                primeiraEmpresa: {
-                    nomeDaempresa: "DataSmart",
-                    cargo: "Estagiário de Ciência de Dados",
-                    atribuicoes: "Análise de dados, criação de dashboards e suporte na criação de modelos preditivos.",
-                    periodoDeAtuacao: "Março 2023 - Atualmente"
+        "experienciaProficional": {
+            "resumo": "Experiência com sistemas embarcados e programação de microcontroladores.",
+            "empresas": {
+                "primeiraEmpresa": {
+                    "nomeDaempresa": "InovaTech",
+                    "cargo": "Estagiária de Automação",
+                    "atribuicoes": "Programação de Arduinos e controle de sensores.",
+                    "periodoDeAtuacao": "Janeiro 2023 - Outubro 2023"
                 }
             },
-            habilidades: {
-                softSkills: "Raciocínio lógico, Foco em resultados, Colaboração",
-                hardSkills: "Python, Pandas, Scikit-learn, Power BI"
+            "habilidades": {
+                "softSkills": "Criatividade, Persistência, Foco",
+                "hardSkills": "C, C++, Arduino, MATLAB"
             },
-            idioma: {
-                primeiroIdioma: "Inglês - Intermediário"
+            "idioma": {
+                "primeiroIdioma": "Inglês - Intermediário"
             }
         }
     },
     {
-        linksProficionais: {
-            linkedin: "www.linkedin.com/in/beatriz-freitas-ti",
-            instagram: "@bia.code"
+        "nome": "André Souza Martins",
+        "celular": "(62) 9 1010-2020",
+        "email": "andremartins@dev.com",
+        "linksProficionais": {
+            "linkedin": "www.linkedin.com/in/andremartinsdev",
+            "instagram": "@andrem.dev"
         },
-        FormacaoAcademica: {
-            primeiraFormacao: "Tecnologia em Banco de Dados"
+        "FormacaoAcademica": {
+            "primeiraFormacao": "Ciência de Dados"
         },
-        experienciaProficional: {
-            resumo: "Profissional organizada e atenta aos detalhes, com experiência em gerenciamento de dados e consultas SQL.",
-            empresas: {
-                primeiraEmpresa: {
-                    nomeDaempresa: "DataBank",
-                    cargo: "Analista de Dados",
-                    atribuicoes: "Criação de relatórios, otimização de queries e suporte ao time de BI.",
-                    periodoDeAtuacao: "Julho 2021 - Janeiro 2024"
+        "experienciaProficional": {
+            "resumo": "Focado em análise e visualização de dados para tomada de decisões.",
+            "empresas": {
+                "primeiraEmpresa": {
+                    "nomeDaempresa": "DataFlow",
+                    "cargo": "Estagiário em Data Science",
+                    "atribuicoes": "Modelagem de dados e construção de dashboards.",
+                    "periodoDeAtuacao": "Setembro 2023 - Atual"
                 }
             },
-            habilidades: {
-                softSkills: "Comprometimento, Análise crítica, Comunicação clara",
-                hardSkills: "SQL, Oracle, PostgreSQL, Excel"
+            "habilidades": {
+                "softSkills": "Pensamento analítico, Comunicação clara, Curiosidade",
+                "hardSkills": "Python, Pandas, Tableau, SQL"
             },
-            idioma: {
-                primeiroIdioma: "Inglês - Avançado"
+            "idioma": {
+                "primeiroIdioma": "Inglês - Avançado"
             }
         }
     },
     {
-        linksProficionais: {
-            linkedin: "www.linkedin.com/in/caio-martins-ti",
-            instagram: "@caio.fullstack"
+        "nome": "Mariana Ribeiro Lopes",
+        "celular": "(27) 9 2323-1414",
+        "email": "mariana.ribeiro@outlook.com",
+        "linksProficionais": {
+            "linkedin": "www.linkedin.com/in/marianarlopes",
+            "instagram": "@marianal.dev"
         },
-        FormacaoAcademica: {
-            primeiraFormacao: "Desenvolvimento Web"
+        "FormacaoAcademica": {
+            "primeiraFormacao": "Desenvolvimento Web"
         },
-        experienciaProficional: {
-            resumo: "Desenvolvedor Full Stack com foco em soluções escaláveis para web e mobile.",
-            empresas: {
-                primeiraEmpresa: {
-                    nomeDaempresa: "CodeWave",
-                    cargo: "Desenvolvedor Full Stack",
-                    atribuicoes: "Criação de sistemas integrados usando React, Node.js e MongoDB.",
-                    periodoDeAtuacao: "Setembro 2022 - Atualmente"
+        "experienciaProficional": {
+            "resumo": "Crio experiências digitais intuitivas e com foco no usuário.",
+            "empresas": {
+                "primeiraEmpresa": {
+                    "nomeDaempresa": "UXCode",
+                    "cargo": "Estagiária UX/UI",
+                    "atribuicoes": "Protótipos, wireframes e testes de usabilidade.",
+                    "periodoDeAtuacao": "Abril 2023 - Janeiro 2024"
                 }
             },
-            habilidades: {
-                softSkills: "Iniciativa, Pensamento sistêmico, Liderança",
-                hardSkills: "React, Node.js, MongoDB, Docker"
+            "habilidades": {
+                "softSkills": "Empatia, Escuta ativa, Criatividade",
+                "hardSkills": "Figma, Adobe XD, HTML, CSS"
             },
-            idioma: {
-                primeiroIdioma: "Inglês - Intermediário"
+            "idioma": {
+                "primeiroIdioma": "Inglês - Intermediário"
             }
         }
     }
-];
+]
+
 
 function Pagina() {
     return (
